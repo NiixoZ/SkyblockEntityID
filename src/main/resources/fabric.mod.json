@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "hypixelentityid",
+  "version": "${version}",
+  "name": "HypixelEntityID",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/hypixelentityid/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "fr.niixoz.hypixelentityid.client.HypixelEntityIdDataGenerator"
+    ],
+    "client": [
+      "fr.niixoz.hypixelentityid.client.HypixelEntityIDClient"
+    ]
+  },
+  "mixins": [
+    "hypixelentityid.mixins.json",
+    {
+      "config": "hypixelentityid.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
