@@ -4,7 +4,9 @@
   "package": "fr.niixoz.hypixelentityid.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
-    "EntitySkyblockEntityIdMixin"
+    "EntitySkyblockEntityIdMixin",
+    "EntityWriteDataMixin",
+    "EntityReadDataMixin"
   ],
   "injectors": {
     "defaultRequire": 1

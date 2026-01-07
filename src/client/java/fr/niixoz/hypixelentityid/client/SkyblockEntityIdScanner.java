@@ -12,7 +12,7 @@ public final class SkyblockEntityIdScanner {
 
     private static final double SCAN_RADIUS = 64.0;     // blocs
     private static final double SCAN_RADIUS_SQ = SCAN_RADIUS * SCAN_RADIUS;
-    private static final long RESCAN_TICKS = 20;        // 1s
+    private static final long RESCAN_TICKS = 3;        // 0.15s
 
     public static void tick(MinecraftClient client) {
         if (client.world == null || client.player == null) return;
